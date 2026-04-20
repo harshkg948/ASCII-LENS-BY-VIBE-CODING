@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-accent: #00FF00;
+  --color-accent-dim: #1a3a1a;
+  --color-accent-label: #4ade80;
+  --color-surface: #0a0a0a;
+  --color-bg-base: #050505;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-base text-accent selection:bg-accent selection:text-black overflow-hidden font-mono;
+  }
+}
+
+.ascii-viewport-grid {
+  background: linear-gradient(rgba(0, 255, 0, 0.03) 50%, rgba(0, 0, 0, 0) 50%),
+              linear-gradient(90deg, rgba(0, 255, 0, 0.03) 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 4px 4px;
+}
+
+.ascii-art {
+  white-space: pre;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.sidebar-border {
+  border-right: 1px solid var(--color-accent-dim);
+}
+
+input[type="range"] {
+  @apply h-0.5 bg-accent-dim appearance-none cursor-pointer accent-accent;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ASCII Lens",
+  "description": "Transform your real-world surroundings into dynamic ASCII art in real-time. Features customizable characters, contrast, and resolution.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "Camera API",
+    "Canvas Processing"
+  ]
+}
